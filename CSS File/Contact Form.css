@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    height: 100%;
+    background-color: #F7F7F7;
+}
+.header{
+    padding: 15px 0;
+    background-color: #ffffff;
+}
+.header-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid white;
+}
+.logo-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0px solid green;
+    width: 80%;
+}
+.logo-content-img {
+    border: solid 0px #42515f;
+    padding-right: 8px;
+    width: 53px;
+}
+.contact-text{
+    font: normal normal bold 22px/25px Montserrat;
+    font-family: "Montserrat",sans-serif;
+    letter-spacing: 0px;
+    color: #008CFF;
+    text-transform: capitalize;
+}
+.add-book {color: #42515f;}
+*{box-sizing: border-box;}
+
+/* Form */
+.form-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.form{
+    width: 60%;
+    padding: 0px 0px;
+    padding-bottom: 30px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    border-radius: 8px;
+    align-items: center;
+}
+.form-head{
+    display: flex;
+    background: #008CFF 0% 0% no-repeat padding-box;
+    padding: 30px 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    opacity: 1;
+    justify-content: center;
+    width: 100%;
+}
+.form-head-text{
+    display: flex;
+    width: 90%;
+    justify-self: center;
+    justify-content: center;
+    font: normal normal normal 28px/37px Roboto;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    align-items: center;
+}
+.column-content{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: flex-start;
+    margin-left: 50px;
+}
+.label{
+    min-width: 50px;
+}
+label{
+    padding: 20px 10px 8px 0;
+    display: inline-block;
+}
+.text{
+    text-align: left;
+    font: normal normal normal 18px/24px Roboto;
+    font-size: 15px;
+    color:#42515F;
+    opacity: 1;
+}
+.input{
+    border: 1px solid #BDBDBD;
+    font-size: 12px;
+    border-radius: 3px;
+    width: 90%;
+    padding: 10px 10px 10px 5px;
+    resize: vertical;
+}
+input::placeholder {
+    font: normal normal normal 12px/15px Roboto;
+}
+.para{
+    height:80px;
+}
+textarea::placeholder {
+    font: normal normal normal 12px/15px Roboto;
+}
+.row-content{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: flex-start;
+}
+select{
+    padding: 10px;
+    border: 1px solid #BDBDBD;
+    border-radius: 3px;
+    font: normal normal normal 12px Roboto;
+    letter-spacing: 0px;
+    color: #e02525;
+    background-color: transparent;
+    width: 180px;
+}
+.table-form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    resize: vertical;
+}
+.buttonParent{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.submitButton{
+    border: none;
+    background: #f5f5f5;
+    margin-right: 30px;
+}
+#submitButton:hover, #resetButton:hover, #cancelButton:hover{
+    background-color: rgb(72, 194, 55);
+    color: white;
+}
+#submitButton:active, #resetButton:active, #cancelButton:active{
+    background-color: rgb(69, 55, 194);
+    color: rgb(0, 0, 0);
+}
+.button{
+    font-size: 15px;
+    font-family: Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    opacity: 1;
+    font-weight: 400;
+    min-width: 80px;
+    padding: 7px 7px;
+    border: 1px solid #707070;
+    cursor: pointer;
+    background: #E2E2E2 0% 0% no-repeat padding-box;
+    border: 1px solid #969696;
+    border-radius: 5px;
+}
+error-output{
+    margin-left: 60%;
+    font-size: 15px;
+    font-style: bold;
+    color: red;
+}
+@media only screen and (max-width: 900px){
+    .column{
+        flex-direction: row;
+    }
+    .submit-reset{
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .submitButton{
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .buttonParent{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .row-content{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    select {
+        width: 150px;
+    }
+}
